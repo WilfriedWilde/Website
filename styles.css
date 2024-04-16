@@ -1,23 +1,70 @@
-/* Styles pour les sections */
-section {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    text-align: center; /* Centre les titres */
+/* Réinitialisation des styles de base */
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
 }
 
-/* Styles pour les titres de section */
-.section-title {
-    font-size: 2em; /* Taille de police plus grande */
-    text-transform: uppercase; /* Convertit en majuscules */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-/* Couleurs des titres de section */
-.blue { color: #007bff; } /* Bleu */
-.red { color: #dc3545; } /* Rouge */
-.green { color: #28a745; } /* Vert */
-.orange { color: #fd7e14; } /* Orange */
-.purple { color: #6f42c1; } /* Violet */
-.teal { color: #17a2b8; } /* Bleu-vert */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #007bff; /* Bleu */
+    margin-bottom: 20px;
+}
+
+/* Pied de page */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
