@@ -1,7 +1,7 @@
 /* Variables de couleur */
 :root {
-    --couleur-principale: #ffcc00; /* Jaune */
-    --couleur-texte: #333; /* Noir */
+    --couleur-principale: orange; /* Jaune */
+    --couleur-texte: grey; /* Noir */
 }
 
 /* Variables de typographie */
