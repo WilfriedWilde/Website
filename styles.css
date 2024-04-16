@@ -1,0 +1,23 @@
+/* Styles pour les sections */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center; /* Centre les titres */
+}
+
+/* Styles pour les titres de section */
+.section-title {
+    font-size: 2em; /* Taille de police plus grande */
+    text-transform: uppercase; /* Convertit en majuscules */
+    margin-bottom: 10px;
+}
+
+/* Couleurs des titres de section */
+.blue { color: #007bff; } /* Bleu */
+.red { color: #dc3545; } /* Rouge */
+.green { color: #28a745; } /* Vert */
+.orange { color: #fd7e14; } /* Orange */
+.purple { color: #6f42c1; } /* Violet */
+.teal { color: #17a2b8; } /* Bleu-vert */
