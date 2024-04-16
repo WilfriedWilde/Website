@@ -1,6 +1,6 @@
 /* Styles pour le corps de la page */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Comic Sans MS', cursive;
     color: #333;
     margin: 0;
     padding: 0;
@@ -9,12 +9,10 @@ body {
 
 /* En-tête */
 header {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background-color: #ffcc00; /* Jaune */
+    color: #333;
     padding: 20px 0;
     text-align: center;
-    background-size: cover;
-    background-position: center;
 }
 
 header h1 {
@@ -33,7 +31,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -51,7 +49,7 @@ section {
 .section-title {
     font-size: 2em;
     text-transform: uppercase;
-    color: #333; /* Noir */
+    color: #ffcc00; /* Jaune */
     margin-bottom: 20px;
     text-align: center;
 }
