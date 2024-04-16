@@ -1,7 +1,18 @@
+/* Variables de couleur */
+:root {
+    --couleur-principale: #ffcc00; /* Jaune */
+    --couleur-texte: #333; /* Noir */
+}
+
+/* Variables de typographie */
+:root {
+    --typo-principale: 'Comic Sans MS', cursive;
+}
+
 /* Styles pour le corps de la page */
 body {
-    font-family: 'Comic Sans MS', cursive;
-    color: #333;
+    font-family: var(--typo-principale);
+    color: var(--couleur-texte);
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
@@ -9,8 +20,8 @@ body {
 
 /* En-tête */
 header {
-    background-color: #ffcc00; /* Jaune */
-    color: #333;
+    background-color: var(--couleur-principale);
+    color: var(--couleur-texte);
     padding: 20px 0;
     text-align: center;
 }
@@ -31,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: var(--couleur-texte);
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -49,7 +60,7 @@ section {
 .section-title {
     font-size: 2em;
     text-transform: uppercase;
-    color: #ffcc00; /* Jaune */
+    color: var(--couleur-principale);
     margin-bottom: 20px;
     text-align: center;
 }
