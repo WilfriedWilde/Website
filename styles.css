@@ -9,7 +9,7 @@ body {
 
 /* En-tête */
 header {
-    background-color: #ff6b6b; /* Rouge */
+    background-color: #343a40; /* Gris foncé */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -52,13 +52,13 @@ section {
 .section-title {
     font-size: 2.5em;
     text-transform: uppercase;
-    color: #ff6b6b; /* Rouge */
+    color: #343a40; /* Gris foncé */
     margin-bottom: 20px;
 }
 
 /* Pied de page */
 footer {
-    background-color: #ff6b6b; /* Rouge */
+    background-color: #343a40; /* Gris foncé */
     color: #fff;
     padding: 20px 0;
     text-align: center;
