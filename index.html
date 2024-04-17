@@ -3,27 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wilfried Wilde</title>
+    <title>Site Web du Musicien</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="title">WILFRIED WILDE</h1>
-        <nav class="navigation">
-            <ul>
-                <li><a href="concerts.html">CONCERTS</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="videos.html">VIDEOS</a></li>
-                <li><a href="listen.html">LISTEN</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Page d'accueil dynamique -->
+    <section class="home">
+        <div class="background-video">
+            <!-- Utilisez une vidéo en fond d'écran -->
+            <video autoplay loop muted>
+                <source src="background_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="biography">
+            <!-- Section de biographie avec des images et des anecdotes -->
+            <h2>Biographie</h2>
+            <p>Texte de la biographie...</p>
+            <img src="biography_image.jpg" alt="Biography Image">
+        </div>
+        <div class="music-player">
+            <!-- Intégrez un lecteur de musique -->
+            <h2>Lecteur de musique</h2>
+            <audio controls>
+                <source src="music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
 
-    <!-- Ajoutez le contenu des autres sections ici -->
+    <!-- Portfolio de musique -->
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="video-thumbnails">
+            <!-- Miniatures hyperliens vers les vidéos -->
+            <a href="https://youtu.be/IYhfyeXLKV4?si=bWQOFucET1sIa47-" target="_blank">
+                <img src="video1_thumbnail.jpg" alt="Video 1">
+            </a>
+            <a href="https://youtu.be/Kbl4rgHaxNk?si=7OWlMagjDezlPsxP" target="_blank">
+                <img src="video2_thumbnail.jpg" alt="Video 2">
+            </a>
+            <a href="https://youtu.be/W0FQ1l6NYDQ?si=Z6WM6HKOtQN1zl4M" target="_blank">
+                <img src="video3_thumbnail.jpg" alt="Video 3">
+            </a>
+        </div>
+        <div class="photo-gallery">
+            <!-- Espaces pour inclure des photos -->
+            <img src="photo1.jpg" alt="Photo 1">
+            <img src="photo2.jpg" alt="Photo 2">
+            <img src="photo3.jpg" alt="Photo 3">
+        </div>
+    </section>
 
+    <!-- Autres sections du site (Calendrier, Merchandising, Contact, Blog) -->
+
+    <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
