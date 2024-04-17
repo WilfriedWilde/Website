@@ -38,4 +38,20 @@ body {
     text-decoration: underline;
 }
 
+.video-thumbnails {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.video-thumbnails a {
+    margin: 10px;
+}
+
+.video-thumbnails img {
+    width: 200px;
+    height: auto;
+}
+
 
