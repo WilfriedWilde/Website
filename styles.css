@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Couleur de fond générale */
 }
 
 header {
@@ -12,7 +13,7 @@ header {
 }
 
 header h1 {
-  color: white;
+  color: #ff6600; /* Orange */
   font-size: 3em;
 }
 
@@ -27,7 +28,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #007bff; /* Bleu */
   text-decoration: none;
 }
 
@@ -43,12 +44,38 @@ h1, h2 {
 }
 
 h2 {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 102, 0, 0.8); /* Orange */
 }
 
 a {
-  color: #007bff;
+  color: #ff6600; /* Orange */
 }
 
-/* Ajoutez le style pour les sections de la page médias ici */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
 
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #007bff; /* Bleu */
+}
+
+thead th {
+  background-color: #007bff; /* Bleu */
+  color: white;
+}
+
+.video-thumbnails img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.photo-slots img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
