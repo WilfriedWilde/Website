@@ -1,76 +1,30 @@
-/* Variables de couleur */
-:root {
-    --couleur-principale: orange; /* Jaune */
-    --couleur-texte: grey; /* Noir */
-}
-
-/* Variables de typographie */
-:root {
-    --typo-principale: 'Comic Sans MS', cursive;
-}
-
-/* Styles pour le corps de la page */
 body {
-    font-family: var(--typo-principale);
-    color: var(--couleur-texte);
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
 }
 
-/* En-tête */
-header {
-    background-color: var(--couleur-principale);
-    color: var(--couleur-texte);
-    padding: 20px 0;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #303030;
+    color: #ffffff;
+    padding: 40px 0;
     text-align: center;
 }
 
-header h1 {
-    font-size: 3em;
+.title {
+    font-size: 48px;
     margin-bottom: 10px;
-    text-transform: uppercase;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: var(--couleur-texte);
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-/* Sections */
-section {
-    padding: 50px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.section-title {
-    font-size: 2em;
-    text-transform: uppercase;
-    color: var(--couleur-principale);
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Pied de page */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+.subtitle {
+    font-size: 24px;
+    font-weight: 300;
 }
 
 
