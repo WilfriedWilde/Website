@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-image: url('https://drive.google.com/file/d/11DGWe7kQCCYF4hWeoxRadlKMYqcflJ6_/view?usp=sharing'); /* Remplacer 'background.jpg' par le chemin de votre image */
+  background-image: url('background.jpg'); /* Remplacer 'background.jpg' par le chemin de votre image */
   background-size: cover;
   text-align: center;
   padding: 50px 0;
@@ -61,6 +61,7 @@ th, td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #007bff; /* Bleu */
+  color: #333; /* Noir */
 }
 
 thead th {
