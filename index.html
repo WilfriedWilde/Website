@@ -37,9 +37,13 @@
             margin: 0;
             font-family: 'Anton', sans-serif;
             font-size: 3em;
-            background: linear-gradient(to right, #6ab7ff, #6ab7ff); /* Utilisation du même bleu que pour les liens */
+            background: linear-gradient(to right, #fff, #fff); /* Utilisation d'un dégradé transparent pour les autres lettres */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        header h1 span {
+            color: #6ab7ff; /* Bleu pour les lettres "W" */
         }
 
         header nav ul {
@@ -94,7 +98,7 @@
 <body>
     <header>
         <div class="header-content">
-            <h1>WILFRIED WILDE</h1>
+            <h1>W<span>I</span>LFRIED WILDE</h1> <!-- Seul le "W" est coloré -->
             <nav>
                 <ul>
                     <li><a href="bio.html">BIO</a></li>
