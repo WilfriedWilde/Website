@@ -18,6 +18,9 @@
         }
 
         header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             background-color: rgba(51, 51, 51, 0.9);
             color: #fff;
             padding: 20px 0;
@@ -35,6 +38,8 @@
         header nav ul {
             display: flex;
             justify-content: center;
+            list-style-type: none;
+            padding: 0;
         }
 
         header nav ul li {
@@ -51,7 +56,7 @@
         }
 
         header nav ul li a:hover {
-            color: #00f;
+            color: #6ab7ff; /* Bleu plus clair */
         }
 
         main {
@@ -79,17 +84,15 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>WILFRIED WILDE</h1>
-            <nav>
-                <ul>
-                    <li><a href="bio.html">BIO</a></li>
-                    <li><a href="medias.html">MÉDIAS</a></li>
-                    <li><a href="concerts.html">CONCERTS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>WILFRIED WILDE</h1>
+        <nav>
+            <ul>
+                <li><a href="bio.html">BIO</a></li>
+                <li><a href="medias.html">MÉDIAS</a></li>
+                <li><a href="concerts.html">CONCERTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
