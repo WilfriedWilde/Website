@@ -12,6 +12,44 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        main {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        main .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
@@ -31,12 +69,10 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <h2>Bienvenue sur le site de Wilfried Wilde</h2>
-                <p>Découvrez l'univers musical moderne et captivant de Wilfried Wilde.</p>
-            </div>
-        </section>
+        <div class="container">
+            <h2>Bienvenue sur le site de Wilfried Wilde</h2>
+            <!-- Suppression du paragraphe de bienvenue -->
+        </div>
     </main>
 
     <footer>
