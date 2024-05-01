@@ -11,7 +11,7 @@
             background-image: url('https://raw.githubusercontent.com/WilfriedWilde/Website/main/wilfried-jazz-1068x570.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: top; /* Cadrage de la photo vers le haut */
             background-attachment: fixed;
             margin: 0;
             padding: 0;
@@ -37,6 +37,9 @@
             margin: 0;
             font-family: 'Anton', sans-serif;
             font-size: 3em;
+            background: linear-gradient(to right, #6ab7ff, #6ab7ff); /* Utilisation du même bleu que pour les liens */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         header nav ul {
@@ -70,7 +73,7 @@
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             padding: 20px;
-            max-width: 800px;
+            max-width: 1000px; /* Étendre plus en largeur */
             margin: 0 auto;
         }
 
@@ -81,8 +84,9 @@
             text-align: center;
             position: fixed;
             width: calc(100% - 40px); /* Largeur ajustée */
-            bottom: 20px;
+            bottom: 0; /* Placement en bas de page */
             left: 20px;
+            right: 20px;
             border-radius: 10px;
         }
     </style>
