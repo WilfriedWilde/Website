@@ -5,6 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MÉDIAS - WILFRIED WILDE</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('wilfried-jazz-1068x570.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Anton', sans-serif;
+            margin: 0;
+            font-size: 3em;
+            color: #6ab7ff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #6ab7ff;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #6ab7ff;
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        section .video-thumbnails {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        section .video-thumbnails img {
+            width: 300px;
+            height: auto;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        section .video-thumbnails img:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,6 +100,7 @@
                 <li><a href="index.html">ACCUEIL</a></li>
                 <li><a href="bio.html">BIO</a></li>
                 <li><a href="listen.html">LISTEN</a></li>
+                <li><a href="medias.html">MÉDIAS</a></li>
                 <li><a href="tour.html">TOUR</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
@@ -22,17 +109,10 @@
 
     <section>
         <h2>MÉDIAS</h2>
-        <p>Regardez mes vidéos :</p>
-        <div class="grid-container">
-            <div class="grid-item hover-effect">
-                <a href="https://youtu.be/ku-TVA2zZBI?si=3_gUHJXYTpKj6rBO"><img src="thumbnail1.jpg" alt="Video 1"></a>
-            </div>
-            <div class="grid-item hover-effect">
-                <a href="https://youtu.be/BKJ8YK0a2Ps?si=BzpHR06IsLZfghFw"><img src="thumbnail2.jpg" alt="Video 2"></a>
-            </div>
-            <div class="grid-item hover-effect">
-                <a href="https://youtu.be/W0FQ1l6NYDQ?si=u0OlqK00KFbYN_vY"><img src="thumbnail3.jpg" alt="Video 3"></a>
-            </div>
+        <div class="video-thumbnails">
+            <a href="https://youtu.be/ku-TVA2zZBI?si=3_gUHJXYTpKj6rBO" target="_blank"><img src="https://img.youtube.com/vi/ku-TVA2zZBI/hqdefault.jpg" alt="Video Thumbnail 1"></a>
+            <a href="https://youtu.be/BKJ8YK0a2Ps?si=BzpHR06IsLZfghFw" target="_blank"><img src="https://img.youtube.com/vi/BKJ8YK0a2Ps/hqdefault.jpg" alt="Video Thumbnail 2"></a>
+            <a href="https://youtu.be/W0FQ1l6NYDQ?si=u0OlqK00KFbYN_vY" target="_blank"><img src="https://img.youtube.com/vi/W0FQ1l6NYDQ/hqdefault.jpg" alt="Video Thumbnail 3"></a>
         </div>
     </section>
 
