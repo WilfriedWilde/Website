@@ -5,6 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOUR - WILFRIED WILDE</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('wilfried-jazz-1068x570.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Anton', sans-serif;
+            margin: 0;
+            font-size: 3em;
+            color: #6ab7ff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #6ab7ff;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #6ab7ff;
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #6ab7ff;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,6 +110,7 @@
                 <li><a href="bio.html">BIO</a></li>
                 <li><a href="listen.html">LISTEN</a></li>
                 <li><a href="medias.html">MÉDIAS</a></li>
+                <li><a href="tour.html">TOUR</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
@@ -22,56 +118,59 @@
 
     <section>
         <h2>TOUR</h2>
-        <p>Prochaines dates :</p>
         <table>
-            <tr>
-                <th>Date</th>
-                <th>Artiste</th>
-                <th>Ville</th>
-                <th>Lieu</th>
-            </tr>
-            <tr>
-                <td>03.06.2024</td>
-                <td>Fernando Brox Quintet</td>
-                <td>Basel</td>
-                <td>Alter Zoll</td>
-            </tr>
-            <tr>
-                <td>14.06.2024</td>
-                <td>WIZ</td>
-                <td>Maia</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>14.07.2024</td>
-                <td>Sauros Wilde Duo</td>
-                <td>Helsinki</td>
-                <td>Tenho</td>
-            </tr>
-            <tr>
-                <td>30.07.2024</td>
-                <td>Fernando Brox Quintet</td>
-                <td>Sevilla</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>01.08.2024</td>
-                <td>Fernando Brox Quintet</td>
-                <td>Granada</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>03.08.2024</td>
-                <td>Fernando Brox Quintet</td>
-                <td>Malaga</td>
-                <td>Clarence</td>
-            </tr>
-            <tr>
-                <td>04.08.2024</td>
-                <td>Fernando Brox Quintet</td>
-                <td></td>
-                <td></td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Artiste</th>
+                    <th>Ville</th>
+                    <th>Lieu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>03.06.2024</td>
+                    <td>Fernando Brox Quintet</td>
+                    <td>Bâle</td>
+                    <td>Alter Zoll</td>
+                </tr>
+                <tr>
+                    <td>14.06.2024</td>
+                    <td>WIZ</td>
+                    <td>Maia</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14.07.2024</td>
+                    <td>Sauros Wilde Duo</td>
+                    <td>Helsinki</td>
+                    <td>Tenho</td>
+                </tr>
+                <tr>
+                    <td>30.07.2024</td>
+                    <td>Fernando Brox Quintet</td>
+                    <td>Séville</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>01.08.2024</td>
+                    <td>Fernando Brox Quintet</td>
+                    <td>Granada</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>03.08.2024</td>
+                    <td>Fernando Brox Quintet</td>
+                    <td>Malaga</td>
+                    <td>Clarence</td>
+                </tr>
+                <tr>
+                    <td>04.08.2024</td>
+                    <td>Fernando Brox Quintet</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
         </table>
     </section>
 
@@ -80,3 +179,4 @@
     </footer>
 </body>
 </html>
+
