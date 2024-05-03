@@ -6,147 +6,278 @@
     <title>WILFRIED WILDE</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Styles communs à toutes les pages */
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            color: #fff;
-            background-image: url('https://raw.githubusercontent.com/WilfriedWilde/Website/main/wilfried-jazz-1068x570.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
         }
 
         header {
-            background-color: rgba(51, 51, 51, 0.8);
+            background-color: #333;
+            color: #fff;
             padding: 20px;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-family: 'Anton', sans-serif;
-            font-size: 3em;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #6ab7ff; /* Bleu pour les lettres "W" */
-            transition: color 0.3s ease;
-        }
-
-        header h1:hover {
-            color: #fff; /* Couleur du titre */
-        }
-
-        header nav ul {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-            padding: 0;
-        }
-
-        header nav ul li {
-            margin: 0 10px;
-        }
-
-        header nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            font-size: 1.2em;
-            transition: color 0.3s ease;
-        }
-
-        header nav ul li a:hover {
-            color: #6ab7ff; /* Bleu plus clair */
-        }
-
-        main {
-            padding: 100px 20px;
-        }
-
-        .container {
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: rgba(51, 51, 51, 0.8);
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        .section {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .section h2 {
             font-size: 2em;
-            margin-bottom: 20px;
         }
 
-        .section p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        nav {
             margin-top: 20px;
         }
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
         }
 
-        th {
-            background-color: #f2f2f2;
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #6ab7ff; /* Bleu plus clair */
+        }
+
+        /* Effet de défilement parallaxe */
+        .parallax {
+            background-image: url('parallax.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            padding: 100px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Effets de superposition et de transparence */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        /* Effets de survol interactifs */
+        .hover-effect:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Effets de typographie avancée */
+        .custom-font {
+            font-family: 'Pacifico', cursive;
+        }
+
+        /* Ombres et effets de lumière */
+        .box-shadow {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Effets de chargement créatifs */
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Effets de grille et de disposition asymétrique */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 20px;
+        }
+
+        .grid-item {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Effets de transition de page */
+        .fade-in {
+            animation: fadeIn ease 1s;
+            -webkit-animation: fadeIn ease 1s;
+            -moz-animation: fadeIn ease 1s;
+            -o-animation: fadeIn ease 1s;
+            -ms-animation: fadeIn ease 1s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity:0; }
+            100% { opacity:1; }
+        }
+
+        @-moz-keyframes fadeIn {
+            0% { opacity:0; }
+            100% { opacity:1; }
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% { opacity:0; }
+            100% { opacity:1; }
+        }
+
+        @-o-keyframes fadeIn {
+            0% { opacity:0; }
+            100% { opacity:1; }
+        }
+
+        @-ms-keyframes fadeIn {
+            0% { opacity:0; }
+            100% { opacity:1; }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>WILFRIED <span>W</span>ILDE</h1> <!-- Seul le "W" est coloré -->
+        <h1>WILFRIED WILDE</h1>
         <nav>
             <ul>
-                <li><a href="index.html">ACCUEIL</a></li>
-                <li><a href="bio.html">BIO</a></li>
-                <li><a href="medias.html">MÉDIAS</a></li>
-                <li><a href="concerts.html">CONCERTS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#bio">BIO</a></li>
+                <li><a href="#listen">LISTEN</a></li>
+                <li><a href="#medias">MÉDIAS</a></li>
+                <li><a href="#tour">TOUR</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="section">
-            <h2>Bienvenue sur WILFRIED WILDE</h2>
-            <p>Ceci est une page d'accueil moderne avec un effet de défilement parallaxe et une superposition transparente. Explorez les différentes sections pour découvrir plus.</p>
-        </div>
+    <section class="parallax">
+        <div class="overlay"></div>
+        <h2 class="custom-font">WILFRIED WILDE</h2>
+        <p>Compositeur et guitariste</p>
+    </section>
 
-        <!-- Liens vers d'autres sections -->
-        <div class="section">
-            <h2>Sections</h2>
+    <section id="bio" class="fade-in">
+        <div class="box-shadow">
+            <h2>BIO</h2>
+            <p>
+                WILFRIED WILDE (1988) est un guitariste et compositeur de Saint-Sever, France. Depuis l'âge de 18 ans, il a joué dans divers pays (France, Espagne, Portugal, Italie, Suisse, Pays-Bas, Danemark, Maroc). Il a partagé la scène avec des musiciens renommés tels que Mark Turner, Perico Sambeat et Javier Vercher. En tant que leader de groupe, il a sorti l'album "Oscilenscope" (2015) et a co-dirigé deux albums avec les projets WIZ, "WIZ" (2021) et "Mosaico" (2023), ainsi qu'avec le groupe de rock galicien LOIROS, "Loiros" (2019) et "Back From The Edge" (2023). Au cours de ses dix ans en Espagne, il a également eu l'occasion de collaborer avec de nombreux artistes en studio et sur scène.
+            </p>
+            <p>
+                En 2011, il remporte le premier prix en tant que soliste au Keep An Eye Jazz Award à Amsterdam et est finaliste de plusieurs concours prestigieux tels que le Festival International de Getxo, le Heineken Jazz Festival, Palma Jazz Comercial ou le Concours de Jazz de Castellón. Il a participé au programme FOCUSYEAR à Jazzcampus Basel au cours des années 2022-2023, où il a eu l'occasion de se produire avec des figures telles que Miguel Zenón, Immanuel Wilkins, Melissa Aldana, Scott Colley, Kris Davis, Ingrid Jensen ou Wolfgang Muthspiel. Il est titulaire d'une licence en guitare jazz du Conservatoire MUSIKENE au Pays Basque et étudie actuellement pour un master en performance à Jazzcampus Basel, en Suisse.
+            </p>
+        </div>
+    </section>
+
+    <section id="listen" class="fade-in">
+        <div class="box-shadow">
+            <h2>LISTEN</h2>
+            <p>Écoutez mes albums :</p>
             <ul>
-                <li><a href="bio.html">BIO</a></li>
-                <li><a href="medias.html">MÉDIAS</a></li>
-                <li><a href="concerts.html">CONCERTS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="https://open.spotify.com/intl-es/album/5WSmSPTSKA6SBHL4fM4h7Y?si=fXiWuLOkT1-5MUlaXyiVeQ">OSCILENSCOPE</a></li>
+                <li><a href="https://wiztriomusic.bandcamp.com/album/wiz">WIZ</a></li>
             </ul>
         </div>
-    </main>
+    </section>
+
+    <section id="medias" class="fade-in">
+        <div class="box-shadow">
+            <h2>MÉDIAS</h2>
+            <p>Regardez mes vidéos :</p>
+            <div class="grid-container">
+                <div class="grid-item hover-effect">
+                    <a href="https://youtu.be/ku-TVA2zZBI?si=3_gUHJXYTpKj6rBO"><img src="thumbnail1.jpg" alt="Video 1"></a>
+                </div>
+                <div class="grid-item hover-effect">
+                    <a href="https://youtu.be/BKJ8YK0a2Ps?si=BzpHR06IsLZfghFw"><img src="thumbnail2.jpg" alt="Video 2"></a>
+                </div>
+                <div class="grid-item hover-effect">
+                    <a href="https://youtu.be/W0FQ1l6NYDQ?si=u0OlqK00KFbYN_vY"><img src="thumbnail3.jpg" alt="Video 3"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tour" class="fade-in">
+        <div class="box-shadow">
+            <h2>TOUR</h2>
+            <p>Prochaines dates :</p>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Artiste</th>
+                    <th>Ville</th>
+                    <th>Lieu</th>
+                </tr>
+                <tr>
+                    <td>03.06.2024</td>
+                    <td>Fernando Brox Quintet</td>
+                    <td>Basel</td>
+                    <td>Alter Zoll</td>
+                </tr>
+                <tr>
+                    <td>14.06.2024</td>
+                    <td>WIZ</td>
+                    <td>Maia</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14.07.2024</td>
+                    <td>Sauros Wilde Duo</td>
+                    <td>Helsinki</td>
+                    <td>Tenho</td>
+                </tr>
+                <tr>
+                    <td>30.07.2024</td>
+                    <td>Fernando Brox Quintet</td>
+                    <td>Sevilla</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>01.08.2024</td>
+                    <td>Fernando Brox Quintet</td>
+                    <td>Granada</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>03.08.2024</td>
+                    <td>Fernando Brox Quintet</td>
+                    <td>Malaga</td>
+                    <td>Clarence</td>
+                </tr>
+                <tr>
+                    <td>04.08.2024</td>
+                    <td>Fernando Brox Quintet</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <div class="box-shadow">
+            <h2>CONTACT</h2>
+            <p>Email : huilefrite@hotmail.fr</p>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 WILFRIED WILDE</p>
