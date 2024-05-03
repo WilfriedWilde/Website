@@ -5,6 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LISTEN - WILFRIED WILDE</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('wilfried-jazz-1068x570.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Anton', sans-serif;
+            margin: 0;
+            font-size: 3em;
+            color: #6ab7ff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #6ab7ff;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #6ab7ff;
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        .listen-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .listen-item {
+            max-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .listen-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .listen-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .listen-item a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #6ab7ff;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,6 +116,7 @@
             <ul>
                 <li><a href="index.html">ACCUEIL</a></li>
                 <li><a href="bio.html">BIO</a></li>
+                <li><a href="listen.html">LISTEN</a></li>
                 <li><a href="medias.html">MÉDIAS</a></li>
                 <li><a href="tour.html">TOUR</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
@@ -22,11 +126,20 @@
 
     <section>
         <h2>LISTEN</h2>
-        <p>Écoutez mes albums :</p>
-        <ul>
-            <li><a href="https://open.spotify.com/intl-es/album/5WSmSPTSKA6SBHL4fM4h7Y?si=fXiWuLOkT1-5MUlaXyiVeQ">OSCILENSCOPE</a></li>
-            <li><a href="https://wiztriomusic.bandcamp.com/album/wiz">WIZ</a></li>
-        </ul>
+        <div class="listen-container">
+            <div class="listen-item">
+                <a href="https://open.spotify.com/intl-es/album/5WSmSPTSKA6SBHL4fM4h7Y?si=fXiWuLOkT1-5MUlaXyiVeQ" target="_blank">
+                    <img src="spotify_thumbnail.jpg" alt="Thumbnail Spotify">
+                    OSCILENSCOPE
+                </a>
+            </div>
+            <div class="listen-item">
+                <a href="https://wiztriomusic.bandcamp.com/album/wiz" target="_blank">
+                    <img src="bandcamp_thumbnail.jpg" alt="Thumbnail Bandcamp">
+                    WIZ
+                </a>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -34,3 +147,4 @@
     </footer>
 </body>
 </html>
+
